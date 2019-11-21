@@ -21,11 +21,9 @@ def solve(data):
             column_list = []
             for i in column:
                 column_list.append([i])
-            print(column_list)
             output_list.append(column_list)
         else:
-            print(row)
-            output_list.append(row)
+            output_list.append([row])
     return output_list
 
 if __name__ == "__main__":
