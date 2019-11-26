@@ -4,15 +4,24 @@ from itertools import groupby
 import numpy as np
 import sys
 
-def solve(data):
-    for input in data:
-        colour = input[-1][0]
-        input[-1][0] = 0
-        input[input != 0] = colour
-    return data
+"""
+Method to find solution for the task aabf363d.json
+
+Args:
+    data(input): The input grid to be processed
+
+Returns:
+    Output grid with all the non black cells filled with the colour on the lower-most left cell and re-colouring the lower-most left cell to black
+"""
+def solve(input):
+    input[input != 0] = input[-1][0]
+    input[-1][0] = 0
+    return input
 
 if __name__ == "__main__":
     inputFilePath = get_file_path(sys.argv)
     data = read_file(inputFilePath)
-    grid = solve(data)
+    grid = []
+    for input in data:
+        grid.append(solve(input))
     print_grid(grid)
