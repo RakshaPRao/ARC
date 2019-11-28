@@ -4,10 +4,9 @@ import itertools
 from sys import exit
 
 """
-This method gets the input file path from the arguments its been passed
-
+This method gets the file path from the arguments passed
 Args:
-    args (str): The list of arguments passed
+    args(str): The list of arguments passed
 Returns:
     Path to the input file
 """
@@ -19,12 +18,11 @@ def get_file_path(args):
 
 
 """
-This methofd reads the file from the path provided and processes it
-
+This method reads the file from the path provided and returns numpy array of 2D grids
 Args:
-    pathToFile (str): The path to the input file which has to be read
+    pathToFile(str): The path to the input file to be read for processing
 Returns:
-    The numpy array of 2D grids which contain the test cases
+    The numpy array of 2D grids which contain the training and testing cases
 """
 def read_file(pathToFile):
     lists = []
@@ -40,21 +38,20 @@ def read_file(pathToFile):
 
 
 """
-This method prints the output grid
-
+This method prints the output grid for all the training and testing cases
 Args:
     data(list): The output that needs to be printed
 """
 def print_grid(data):
     for input in data:
         counter = 0
-        dimention = len(input[0])
+        dimension = len(input[0])
         arr = np.asarray(input).flatten()
         for i in arr:
             print(i, end=" ")
             counter += 1
             # This is the condition check for end of one row as it 2D grid is flattened to 1D
             # to reduce the time complexity of the method
-            if (counter % dimention == 0):
+            if (counter % dimension == 0):
                 print()
         print()
