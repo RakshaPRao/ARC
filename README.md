@@ -20,6 +20,6 @@ Each of the solution file has a the following features
 - `solve` method which contains the hand coded solution for the particular task.
 - `output` of the task is the solution printing the output grid on the console
 
-The output of the program looks like below
+The sample output for a task looks like below
 
 ![output](https://i.ibb.co/Sfhnt28/Annotation-2019-12-01-184607.png)
