@@ -1,4 +1,4 @@
-# The Abstraction and Reasoning Corpus (ARC)
+# Hand coded solutions for tasks in Abstraction and Reasoning Corpus (ARC)
 
 This repository contains the solutions for hand coded solutions for the ARC for the tasks 29c11459, 746b3537, aabf363d and a699fb00.
 
