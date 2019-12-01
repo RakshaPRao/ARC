@@ -16,7 +16,7 @@ There is a `src` directory that has the following files
 
 Each of the solution file has a the following features
 
-- `main` method which takes the path of the training data JSON as its input from command line. Eg. solution_29c11459.py need to be run as `py solution_29c11459.py path/to/training/data/json/file`
+- `main` method which takes the path of the training data JSON as its input from command line. Eg. solution_29c11459.py need to be run as `python solution_29c11459.py path/to/training/data/json/file`
 - `solve` method which contains the hand coded solution for the particular task.
 - `output` of the task is the solution printing the output grid on the console
 
