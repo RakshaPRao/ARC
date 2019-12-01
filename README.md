@@ -1,8 +1,8 @@
 # Hand coded solutions for tasks in Abstraction and Reasoning Corpus (ARC)
 
-This repository contains the solutions for hand coded solutions for the ARC for the tasks 29c11459, 746b3537, aabf363d and a699fb00.
+This repository contains hand coded solutions in the ARC for the tasks 29c11459, 746b3537, aabf363d and a699fb00.
 
-Solving these tasks is easy for a human but the same tasks are very hard for an AI system. Finding patterns without any human intervention for all these taks is beyond the current state of the art.
+Solving these tasks is easy for a human but the same tasks are very hard for an AI system. Finding patterns without any human intervention for all these tasks is beyond the current state of the art.
 
 A complete description of the dataset, its goals, and its underlying logic, can be found in: [The Measure of Intelligence](https://arxiv.org/abs/1911.01547).
 
@@ -11,7 +11,7 @@ A complete description of the dataset, its goals, and its underlying logic, can 
 There is a `src` directory that has the following files
 
 - `solution_task.py`: These files provide the solutions for the tasks which is described by it. Eg: solution_29c11459.py solves the task described in 29c11459.json which is in `data/training` directory.
-- `ioOps.py`: This file has the operations that are common for solving all the tasks like reading training file and printing the output grid on console.
+- `ioOps.py`: This file has the operations that are common for solving all the tasks like reading, training file and printing the output grid on console.
 - `19230887and19233027Report.pdf`: This contains the comprehensive report.
 
 Each of the solution file has a the following features
@@ -20,6 +20,6 @@ Each of the solution file has a the following features
 - `solve` method which contains the hand coded solution for the particular task.
 - `output` of the task is the solution printing the output grid on the console
 
-The sample output for a task looks like below
+The sample output for a task looks like the one shown below
 
 ![output](https://i.ibb.co/Sfhnt28/Annotation-2019-12-01-184607.png)
